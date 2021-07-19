@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /*Lobster*/
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');/*Maven Pro*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');/*Bungee Inline*/
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap'); /*Monoton*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');/*Pacifico*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');/*Baloo 2*/
+
+
+
+
+
+
+@media screen and (min-width: 961px) {
+  html {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .new_upperBar{
+    width:100%;
+    background-color: lightBlue;
+    height: 9%;
+    display: flex;
+    flex-direction: row;
+  }
+  .new_colorBar{
+    width:100%;
+    background-color: red;
+    height: 1%;
+    margin-bottom:7px;
+    display: flex;
+    flex-direction: row;
+  }
+  .new_colorBar #color1{
+    flex-basis: 25%;
+    background-color: #00cc00;
+  }
+  .new_colorBar #color2{
+    flex-basis: 25%;
+    background-color: #ff0000;
+  }
+  .new_colorBar #color3{
+    flex-basis: 25%;
+    background-color: #0000ff;
+  }
+  .new_colorBar #color4{
+    flex-basis: 25%;
+    background-color: #ffff00;
+  }
+
+
+  .new_main{
+    background-color: white;
+    font-family: "Maven Pro";
+    height: 90%;
+    overflow-y: auto;
+    padding: 12px;
+    font-size: 20px;
+    width: 80%;
+    border: none;
+    outline: none;
+    line-height: 150%;
+    box-shadow:
+      0 -6px white,
+      0 6px white,
+      -15px 0 4px -3px #9ecaed,
+      15px 0 4px -3px #9ecaed;
+  }
+  .new_main p {
+    text-align: justify;
+  }
+  .new_main h1 {
+    line-height: 150%;
+  }
+
+  #logo-link {
+    text-decoration: none;
+    color: black;
+    user-select: none;
+  }
+  #logo {
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: "Lobster";
+    text-shadow:
+    -2px -2px 0 #ffffff,
+    2px -2px 0 #ffffff,
+    -2px 2px 0 #ffffff,
+    2px 2px 0 #ffffff;
+  }
+
+  .dropdown{
+    display: inline-block;
+    margin-left: 5px;
+    font-family: "Maven Pro";
+    font-size: 17px;
+  }
+
+  .new_main::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    background-color: #F5F5F5;
+  }
+
+  .new_main::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+  }
+
+  .new_main::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+  }
+
+  #home_button {
+    position:absolute;
+    top:15px;
+    right:15px;
+    transform: scale(1.8);
+  }
+  .commentBox{
+    background-color: #fdfd96;
+    border: 1px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    margin-left: 0;
+    width: 98%;
+  }
+
+  .commentButton{
+    /* background styles */
+    position: relative;
+    display: inline-block;
+    border-radius: 9px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: green; /*for compatibility with older browsers*/
+    background-image: linear-gradient(green,lightgreen);
+
+    /* text styles */
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-family: "Lobster";
+    font-weight: 100;
+    user-select: none;
+  }
+
+  .commentButton:after{
+  	content: '';
+  	position: absolute;
+  	top: 2px;
+  	left: 2px;
+  	width: calc(100% - 4px);
+  	height: 50%;
+  	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+  }
+  .inputAreas {
+    border: 2px solid #8842d5;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 2px;
+    min-height: 36px;
+    min-width: 30%;
+    font-family: inherit;
+    font-size: inherit;
+  }
+  #searchBarArea{
+    text-align: center;
+  }
+  #searchBarArea label {
+    font-family: "Bungee Inline";
+  }
+  #searchedWord{
+    background-color: #ffd0d7;
+    border-radius: 4px;
+    padding: 4px;
+    font-family: "Baloo 2";
+  }
+
+}

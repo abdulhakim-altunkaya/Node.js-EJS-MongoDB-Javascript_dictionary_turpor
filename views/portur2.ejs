@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include("./partials/partial_2") %>
+  </head>
+  <body>
+    <%- include("./partials/partial_1") %>
+    <div class="new_main">
+
+      <form id="contact_form" action="/portur2" method="post">
+
+        <label for="input1">Enter Portuguese Word: </label><br>
+        <input class="inputAreas" type="text" name="input1" required><br>
+        <label for="input2">Properties: </label><br>
+        <input class="inputAreas" type="text" name="input2" required><br>
+        <label for="input3">Turkish Meaning 1: </label><br>
+        <input class="inputAreas" type="text" name="input3" required><br>
+
+        <label for="input4">Turkish Meaning 2: </label><br>
+        <input class="inputAreas" type="text" name="input4"><br>
+        <label for="input5">Turkish Meaning 3: </label><br>
+        <input class="inputAreas" type="text" name="input5"><br>
+        <label for="input6">Turkish Meaning 4: </label><br>
+        <input class="inputAreas" type="text" name="input6"><br>
+
+        <button class="commentButton">Submit</button>
+      </form>
+
+    </div>
+
+  </body>
+</html>
